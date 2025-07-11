@@ -1,3 +1,13 @@
+
+
+🚧 This project is currently under development. Not ready for production use. 🚧
+
+
+
+
+
+
+
 # 🧪 Ecommerce A/B Testing Analysis
 
 This project explores an A/B testing scenario using real-world ecommerce data from Kaggle. The objective is to determine whether a newly designed landing page leads to a higher conversion rate compared to the existing version.
