@@ -27,15 +27,14 @@ ecommerce_ab_test/
 │
 ├── notebooks/
 │ ├── 01_data_eda.ipynb # Exploratory Data Analysis
-│ ├── 02_ab_test_analysis.ipynb # Statistical A/B test (z-test, chi2)
-│ ├── 03_report.ipynb # Summary insights and conclusions
-│ └── 04_subgroup_analysis.ipynb # Country-wise subgroup testing
+│ ├── 02_ab_test_analysis.ipynb # Statistical A/B test (z-test, chi2, effect size)
+│ └── 03_report.ipynb # Summary insights and final report
 │
 ├── outputs/
 │ └── figures/ # Visualization images
 │
 ├── reports/
-│ └── final_report.pdf # Optional exportable summary
+│ └── final_report.pdf # Exportable summary (optional)
 │
 ├── requirements.txt # Python dependencies
 └── README.md # Project overview
@@ -52,13 +51,13 @@ To evaluate whether a newly implemented landing page results in a statistically 
 
 ## 📊 Methodology
 
-- **Cleaning and filtering** inconsistent entries between assigned groups and visited pages
+- **Cleaning and filtering** inconsistent entries between assigned groups and landing pages
 - **Exploratory Data Analysis (EDA)** of conversion trends by group and country
-- **Hypothesis Testing:**
+- **Hypothesis Testing** using:
   - Proportions z-test
   - Chi-squared test
   - Cohen’s h (effect size)
-- **Subgroup Analysis** by country for deeper insight
+- **Statistical interpretation** with confidence intervals
 
 ---
 
@@ -67,16 +66,19 @@ To evaluate whether a newly implemented landing page results in a statistically 
 - Control group had a slightly higher conversion rate (12.04%) than the treatment group (11.89%)
 - No statistically significant difference between groups (`p = 0.2151`)
 - Effect size was negligible (`Cohen’s h = 0.0046`)
-- No country showed a statistically significant result (all `p > 0.05`)
+- 95% confidence intervals overlapped, reinforcing non-significance:
+  - Control: [0.1187, 0.1221]
+  - Treatment: [0.1173, 0.1206]
 
 ---
 
 ## 📦 Requirements
 
-Install packages with:
+Install dependencies with:
 
 ```bash
 pip install -r requirements.txt
 
 🧾 Author Note
-This project was developed as a supplementary portfolio submission for Master's degree program applications. It demonstrates practical application of A/B testing, hypothesis testing, subgroup analysis, and reproducible reporting in Python.
+This project was developed as a supplementary portfolio submission for Master's degree program applications.
+It demonstrates practical application of A/B testing, statistical hypothesis testing, and reproducible reporting in Python.
