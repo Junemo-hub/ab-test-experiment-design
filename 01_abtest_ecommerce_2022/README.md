@@ -1,13 +1,3 @@
-
-
-🚧 This project is currently under development. Not ready for production use. 🚧
-
-
-
-
-
-
-
 # 🧪 Ecommerce A/B Testing Analysis
 
 This project explores an A/B testing scenario using real-world ecommerce data from Kaggle. The objective is to determine whether a newly designed landing page leads to a higher conversion rate compared to the existing version.
@@ -64,11 +54,11 @@ To evaluate whether a newly implemented landing page results in a statistically 
 ## 🧠 Key Findings
 
 - Control group had a slightly higher conversion rate (12.04%) than the treatment group (11.89%)
-- No statistically significant difference between groups (`p = 0.2151`)
-- Effect size was negligible (`Cohen’s h = 0.0046`)
+- No statistically significant difference between groups (`p = 0.1887`)
+- Effect size was negligible (`Cohen’s h = 0.0049`)
 - 95% confidence intervals overlapped, reinforcing non-significance:
   - Control: [0.1187, 0.1221]
-  - Treatment: [0.1173, 0.1206]
+  - Treatment: [0.1171, 0.1205]
 
 ---
 
@@ -78,6 +68,7 @@ Install dependencies with:
 
 ```bash
 pip install -r requirements.txt
+
 
 🧾 Author Note
 This project was developed as a supplementary portfolio submission for Master's degree program applications.
